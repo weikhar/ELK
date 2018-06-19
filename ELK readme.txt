@@ -31,9 +31,16 @@ Based on the following version:
 		b) select drop down for relevant @time.. then click next & your data is loaded
 	c) Go to Discover
 	d) Go to Visualize
+4) Start filebeat
+	Assumes [filebeat.yml] is configured to match ELK paths
+	a) goto filebeat folder [..\Wei Khar\Apps\filebeat]
+	b) start Powershell
+	c) run [powershell.exe -ExecutionPolicy UnRestricted -File .\install-service-filebeat.ps1]
+	d) test filebeat config [.\filebeat.exe -e test config]
+	e) test filebeat output [.\filebeat.exe -e test output]
+	f) start filebeat [.\filebeat.exe -c filebeat.yml -e -d "*"]
 	
-	
-4) House-keeping (use "rsELK.bat)
+5) House-keeping (use "rsELK.bat)
 	a) To remove old data and start over:
 		i) in kibana 
 			[1] > Dev Tools > run "DELETE logstash-*" to remove the indice
