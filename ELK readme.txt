@@ -33,7 +33,7 @@ Based on the following version:
 	d) Go to Visualize
 4) Start filebeat
 	Assumes [filebeat.yml] is configured to match ELK paths
-	a) goto filebeat folder [..\Wei Khar\Apps\filebeat]
+	a) goto filebeat folder [..\Apps\filebeat]
 	b) start Powershell
 	c) run [powershell.exe -ExecutionPolicy UnRestricted -File .\install-service-filebeat.ps1]
 	d) test filebeat config [.\filebeat.exe -e test config]
